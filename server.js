@@ -47,6 +47,6 @@ app.post("/order", (req, res) => {
   });
 })
 
-app.listen(3001, () => {
-  console.log('listening on port: 3001')
+app.listen(process.env.PORT, () => {
+  console.log('listening on port: '+ process.env.PORT)
 });
