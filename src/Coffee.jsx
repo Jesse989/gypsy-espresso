@@ -15,7 +15,7 @@ class Coffee extends Component {
       <div className="box">
         <article className="media">
           <div className="media-left">
-            <figure className="image">
+            <figure className="image is-128x128">
               <img style={styles.coffeePic} src={this.props.img} alt="" />
             </figure>
           </div>
