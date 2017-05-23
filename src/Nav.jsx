@@ -16,12 +16,6 @@ export default class Nav extends Component {
             <p style={styles.cursiveFont} className="title">Gypsy Chick Espresso</p>
           </a>
         </div>
-
-        <span className="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
     </nav>
     )
   }

@@ -13,30 +13,34 @@ class CoffeeShopDash extends Component {
     {
       img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/275px-A_small_cup_of_coffee.JPG',
       name: 'Don Dankmasta Dirty',
-      description: 'Extra dark roast with lots of crema',
+      description: 'Lots of crema',
       origin: 'Jamaica',
-      sku: 'sku_AhUHs2nQNu82ud'
+      sku: 'sku_AhUHs2nQNu82ud',
+      price: 20.87
     },
     {
       img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/275px-A_small_cup_of_coffee.JPG',
-      name: 'Don Dankmasta Dirty',
-      description: 'Clean light roast with lots of berry',
+      name: 'Emerald Dream',
+      description: 'Clean light roast',
       origin: 'Jamaica',
-      sku: 'sku_AhUG4wuPa5IZwN'
+      sku: 'sku_AhUG4wuPa5IZwN',
+      price: 20.87
     },
     {
       img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/275px-A_small_cup_of_coffee.JPG',
       name: 'Humble Honduran',
-      description: 'Extra dark roast with lots of hard working flavors',
+      description: 'Extra dark roast',
       origin: 'Honduras',
-      sku: 'sku_AhUEPjWcwToEe3'
+      sku: 'sku_AhUEPjWcwToEe3',
+      price: 20.87
     },
     {
       img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/275px-A_small_cup_of_coffee.JPG',
       name: 'Humble Honduran',
-      description: 'Extra light roast with lots of stonefruit and old leather',
+      description: 'Extra stonefruit',
       origin: 'Honduras',
-      sku: 'sku_AhOlhVdWUYHToL'
+      sku: 'sku_AhOlhVdWUYHToL',
+      price: 20.87
     },
   ]
 

@@ -35,7 +35,7 @@ class Buy extends Component {
           token={this.onToken}
           stripeKey={process.env.PUBLISHABLE}
         >
-          <button className="button is-success">Buy Now</button>
+          <button className="button is-inverted">Buy Now</button>
         </StripeCheckout>
       </div>
     )
