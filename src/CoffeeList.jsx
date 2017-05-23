@@ -12,6 +12,9 @@ class CoffeeList extends Component {
       navColor: {
         backgroundColor: "rgba(255, 219, 188, .3)",
       },
+      centered: {
+        textAlign: "centered",
+      }
     };
 
     const coffeeList = this.props.coffees.map((coffee, i) => (
@@ -28,9 +31,11 @@ class CoffeeList extends Component {
     return (
       <div style={styles.navColor} className="section">
         <div className="columns">
-          <div className="column is-8 is-offset-2">
+          <div className="column is-10 is-offset-1">
             <h2 style={styles.cursiveFont} className="title is-2">Roasted fresh daily:</h2>
-            {coffeeList}
+            <div style={styles.centered} className="columns">
+              {coffeeList}
+            </div>
           </div>
         </div>
       </div>

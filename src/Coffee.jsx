@@ -7,31 +7,16 @@ class Coffee extends Component {
   render() {
     const styles = {
       coffeePic: {
-        borderRadius: '5%',
+        backgroundColor: "white",
+        margin: "5px",
+        textAlign: "center",
       },
     }
 
     return (
-      <div className="box">
-        <article className="media">
-          <div className="media-left">
-            <figure className="image is-128x128">
-              <img style={styles.coffeePic} src={this.props.img} alt="" />
-            </figure>
-          </div>
-          <div className="media-content">
-            <div className="content">
-              <p>
-                <strong>{this.props.name}</strong> <small>{this.props.origin}</small>
-                <br />
-                {this.props.description}
-              </p>
-            </div>
-          </div>
-          <Buy
-            productName={this.props.name}
-            productSku={this.props.sku} />
-        </article>
+      <div style={styles.coffeePic} className="column is-one-quarter-desktop is-half-mobile">
+        <img src={this.props.img} alt="coffee" />
+        <h4 className="subtitle is-6">{this.props.name}</h4>
       </div>
     )
   };
