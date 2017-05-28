@@ -15,7 +15,7 @@ const coffees = {
         name: 'Loco Leon',
         description: 'House espresso blend',
         origin: 'Jamaica',
-        sku: 'sku_AhUHs2nQNu82ud',
+        sku: 'sku_Ajk5aemgLeHBEH',
         price: 20.87
       },
       {
@@ -23,7 +23,7 @@ const coffees = {
         name: 'Energy Waves',
         description: 'Lightly roasted blend',
         origin: 'Jamaica',
-        sku: 'sku_AhUG4wuPa5IZwN',
+        sku: 'sku_AjkAt1vK3aagzC',
         price: 20.87
       },
       {
@@ -31,7 +31,7 @@ const coffees = {
         name: 'Happy Camper',
         description: 'Extra nice dark roast',
         origin: 'Honduras',
-        sku: 'sku_AhUEPjWcwToEe3',
+        sku: 'sku_AjkBUwK69Jfv1L',
         price: 20.87
       },
       {
@@ -39,7 +39,7 @@ const coffees = {
         name: 'Reggae Vibes',
         description: 'Extra stonefruit here',
         origin: 'Honduras',
-        sku: 'sku_AhOlhVdWUYHToL',
+        sku: 'sku_AjkBPW9jEgur6D',
         price: 20.87
       },
     ],
@@ -49,7 +49,7 @@ const coffees = {
         name: 'Costa Rica',
         description: 'Medium roast',
         origin: 'Costa Rica',
-        sku: 'sku_AhUHs2nQNu82ud',
+        sku: 'sku_AjkBijtgtbE72J',
         price: 20.87
       },
       {
@@ -57,7 +57,7 @@ const coffees = {
         name: 'Ethiopian',
         description: 'Light roast',
         origin: 'Ethiopian',
-        sku: 'sku_AhUG4wuPa5IZwN',
+        sku: 'sku_AjkCz5tSbzYdF2',
         price: 20.87
       },
       {
@@ -65,7 +65,7 @@ const coffees = {
         name: 'Bali',
         description: 'Light roast',
         origin: 'Bali',
-        sku: 'sku_AhUEPjWcwToEe3',
+        sku: 'sku_AjkCDRFtBhrTB2',
         price: 20.87
       },
       {
@@ -73,7 +73,7 @@ const coffees = {
         name: 'Mexico',
         description: 'Dark roast',
         origin: 'Mexico',
-        sku: 'sku_AhOlhVdWUYHToL',
+        sku: 'sku_AjkDjGH7re0zRg',
         price: 20.87
       },
     ]
