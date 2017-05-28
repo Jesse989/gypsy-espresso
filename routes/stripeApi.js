@@ -20,6 +20,17 @@ const createCustomer = (payload, cb) => {
   stripe.customers.create({
     source: payload.id,
     email: payload.email,
+    shipping: {
+      name: payload.shipping_name,
+      address: {
+        line1: payload.shipping_address_line1,
+        line2: payload.shipping_address_line2 ? payload.shipping_address_line2 : "",
+        city: payload.shipping_address_city,
+        state: payload.shipping_address_state,
+        country: payload.shipping_address_country_code,
+        postal_code: payload.shipping_address_zip
+      }
+    },
   }, ((err, customer) => {
     if (err) return err;
     const newCustomer = new Customer({ email: customer.email, customerId: customer.id });
