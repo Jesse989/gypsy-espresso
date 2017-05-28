@@ -11,12 +11,12 @@ const getCustomer = (payload, cb) => {
     if (customer) {
       cb(payload, customer);
     } else {
-      createCustomer(payload);
+      createCustomer(payload, cb);
     };
   }))
 };
 
-const createCustomer = (payload) => {
+const createCustomer = (payload, cb) => {
   stripe.customers.create({
     source: payload.id,
     email: payload.email,
@@ -25,7 +25,7 @@ const createCustomer = (payload) => {
     const newCustomer = new Customer({ email: customer.email, customerId: customer.id });
     newCustomer.save((err) => {
       if (err) return err;
-      createOrder(payload, newCustomer);
+      cb(payload, newCustomer);
     })
   }))
 };

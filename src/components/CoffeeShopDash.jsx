@@ -6,7 +6,7 @@ import SearchSort from './SearchSort';
 import Footer from './Footer';
 import Nav from './Nav';
 import coffees from '../js/coffeeApi';
-
+import SubscriptionInfo from './SubscriptionInfo'
 
 class CoffeeShopDash extends Component {
   render() {
@@ -15,6 +15,7 @@ class CoffeeShopDash extends Component {
       <div>
         <Nav />
         <ProductSpotlight />
+        <SubscriptionInfo />
         <SearchSort
           coffees={coffees}/>
 
