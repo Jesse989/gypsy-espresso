@@ -1,10 +1,18 @@
 {
   "main.css": "static/css/main.38f215de.css",
   "main.css.map": "static/css/main.38f215de.css.map",
-  "main.js": "static/js/main.2924ba22.js",
-  "main.js.map": "static/js/main.2924ba22.js.map",
+  "main.js": "static/js/main.5d12f73a.js",
+  "main.js.map": "static/js/main.5d12f73a.js.map",
   "static\\media\\GreatVibes-Regular.ttf": "static/media/GreatVibes-Regular.5bf06596.ttf",
-  "static\\media\\default-header.jpg": "static/media/default-header.1042cf96.jpg",
+  "static\\media\\bali.jpg": "static/media/bali.c870477e.jpg",
+  "static\\media\\costa_rica.jpg": "static/media/costa_rica.b2880475.jpg",
+  "static\\media\\default-header.jpg": "static/media/default-header.29b14d45.jpg",
+  "static\\media\\energy_waves.jpg": "static/media/energy_waves.9c5c451f.jpg",
+  "static\\media\\ethiopia.jpg": "static/media/ethiopia.c9fa47b5.jpg",
   "static\\media\\finalcomp.png": "static/media/finalcomp.2c977955.png",
+  "static\\media\\happy_camper.jpg": "static/media/happy_camper.f173ccae.jpg",
+  "static\\media\\loco_leon_300.jpg": "static/media/loco_leon_300.85a9c8c4.jpg",
+  "static\\media\\mexico.jpg": "static/media/mexico.e1853e15.jpg",
+  "static\\media\\reggae_vibes.jpg": "static/media/reggae_vibes.61950405.jpg",
   "static\\media\\small_face.png": "static/media/small_face.a4f9b032.png"
 }

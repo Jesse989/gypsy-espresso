@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import backgroundImage from './finalcomp.png';
+import backgroundImage from '../media/finalcomp.png';
 
 class Title extends Component {
 
@@ -8,7 +8,7 @@ class Title extends Component {
     return (
       <section className="hero">
         <div className="hero-body">
-          <div className="container box">
+          <div className="container">
             <div className="columns">
               <div className="column is-8 is-offset-3">
                 <img src={backgroundImage} alt="logo"/>
@@ -16,6 +16,7 @@ class Title extends Component {
             </div>
           </div>
         </div>
+        <hr />
       </section>
     )
   };

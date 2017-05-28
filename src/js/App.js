@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './bulma.css';
-import './GreatVibes-Regular.ttf';
+import '../css/bulma.css';
+import '../media/GreatVibes-Regular.ttf';
 
-import CoffeeShopDash from './CoffeeShopDash';
+import CoffeeShopDash from '../components/CoffeeShopDash';
 
 class App extends Component {
   render() {

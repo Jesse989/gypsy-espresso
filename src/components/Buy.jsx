@@ -1,24 +1,18 @@
 import React, { Component } from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 import PropTypes from 'prop-types';
+import smallFaceIcon from '../media/small_face.png'
+import clientApi from '../js/clientApi'
 
 class Buy extends Component {
 
   onToken = (token, args) => {
-    const payload = Object.assign(token, args, { productSku: this.props.productSku})
-    //TODO create a component that pops up to say the order
-    //was succesful or not.
-    fetch('/order', {
-      method: 'POST',
-      headers: {'Content-Type':'application/json'},
-      body: JSON.stringify(payload),
-    }).then(token => {
-      if (token.status === 200) {
-        alert(`Thank you, your order for ${this.props.productName} is being processed`)
-      } else {
-        alert("There was an error, please try again")
-      }
-    })
+    const payload = Object.assign(token, args,
+      {
+        productSku: this.props.productSku,
+        productName: this.props.productName,
+      })
+    clientApi(payload, "order");
   }
 
   render() {
@@ -31,11 +25,11 @@ class Buy extends Component {
           zipCode={true}
           panelLabel="Send me coffee!"
           name='Gypsy Chick Espresso'
-          image="https://gypsychickespresso.files.wordpress.com/2017/04/finalcomp.png?w=640"
+          image={smallFaceIcon}
           token={this.onToken}
           stripeKey={process.env.PUBLISHABLE}
         >
-          <button className="button is-inverted">Buy Now</button>
+          <button className="button is-outlined">Buy Now</button>
         </StripeCheckout>
       </div>
     )
