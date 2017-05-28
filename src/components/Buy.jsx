@@ -27,7 +27,7 @@ class Buy extends Component {
           name='Gypsy Chick Espresso'
           image={smallFaceIcon}
           token={this.onToken}
-          stripeKey={process.env.PUBLISHABLE}
+          stripeKey='pk_live_6h9EkSZFS2AE6g33kzq3TCBc'
         >
           <button className="button is-outlined">Buy Now</button>
         </StripeCheckout>
