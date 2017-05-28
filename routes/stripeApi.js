@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
 const Customer = mongoose.model('Customer');
-const stripe = require('stripe')('sk_test_3Iyf7nqfyKq25EwXfOzD2oZ4');
+const stripe = require('stripe')(process.env.SECRET);
 
 // functions to be used in routes
 const getCustomer = (payload, cb) => {
@@ -60,7 +60,6 @@ const createOrder = (payload, customer) => {
 }
 
 const createSubscription = (payload, customer) => {
-  console.log(payload);
   stripe.subscriptions.create({
     customer: customer.customerId,
     plan: payload.productName,
