@@ -8,7 +8,7 @@ require("./models/models");
 const api = require("./routes/stripeApi");
 const auth = require("./routes/auth");
 
-mongoose.connect('mongodb://test:test@ds111549.mlab.com:11549/gypsy')
+mongoose.connect('mongodb://'+process.env.MONGODBUSER+':'+process.env.MONGODBPW+'@ds111549.mlab.com:11549/gypsy')
 
 const app = express();
 
