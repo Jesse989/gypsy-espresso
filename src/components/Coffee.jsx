@@ -7,9 +7,11 @@ class Coffee extends Component {
   state = {
     hover: false,
   }
+
   toggleHover = () => {
     this.setState({hover: !this.state.hover})
   }
+
   render() {
     const styles = {
       coffeePic: {
@@ -30,7 +32,7 @@ class Coffee extends Component {
       >
         <img style={styles.noMargin} src={this.props.img} alt="coffee" />
         <br />
-        <p>12 oz - Whole Bean</p>
+        <p><i>12 oz - Whole Bean</i></p>
         <p><strong>{this.props.name}</strong></p>
         <p>{this.props.description}</p>
         <p>${this.props.price}</p>

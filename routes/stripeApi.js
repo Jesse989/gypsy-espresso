@@ -83,7 +83,7 @@ const createSubscription = (payload, customer) => {
 
 const payOrder = (payload, customer, order) => {
   stripe.orders.pay(order.id, {
-    source: payload.id,
+    customer: customer.customerId,
     email: order.email,
   }, ((err, orderConfirmation) => {
     if (err) return err;

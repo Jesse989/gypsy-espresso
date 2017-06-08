@@ -12,8 +12,7 @@ class Subscribe extends Component {
         productSku: this.props.productSku,
         productName: this.props.productName,
       })
-    const response = clientApi(payload, "subscribe");
-    console.log(response);
+    clientApi(payload, "subscribe");
   }
 
   render() {

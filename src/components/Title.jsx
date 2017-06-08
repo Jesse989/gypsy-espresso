@@ -16,7 +16,6 @@ class Title extends Component {
             </div>
           </div>
         </div>
-        <hr />
       </section>
     )
   };
