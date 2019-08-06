@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import coffeeBanner from '../media/default-header.jpg';
+import coffeeBanner from '../media/about-coffee-banner.png';
 
 class ProductSpotlight extends Component {
   render() {
     const styles = {
       img: {
-        verticalAlign: "middle",
-        padding: "0px, 0px, 0px, 0px"
+        verticalAlign: 'middle',
+        padding: '0px, 0px, 0px, 0px'
       }
-    }
+    };
 
     return (
       <div style={styles.img}>
@@ -17,12 +17,13 @@ class ProductSpotlight extends Component {
             <img
               style={styles.img}
               src={coffeeBanner}
-              alt="light brown coffee" />
+              alt="light brown coffee"
+            />
           </div>
         </div>
       </div>
-    )
-  };
+    );
+  }
 }
 
 export default ProductSpotlight;
